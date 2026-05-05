@@ -6,4 +6,73 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Sen", sans-serif;
+}
+/* =================common==================== */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav a {
+  color: black;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #000;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #110e0e;
+}
+/* header */
+.header {
+  background: bisque;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  color: white;
+  padding: 0px 16px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background-color: #000;
+}
+.btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
 }
