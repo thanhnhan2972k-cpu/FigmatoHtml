@@ -50,6 +50,19 @@ a {
   border-radius: 1px;
   background-color: #110e0e;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
+
 /* header */
 .header {
   background: bisque;
@@ -287,6 +300,7 @@ a {
   width: 100%;
 }
 .popular .courses-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
