@@ -52,7 +52,7 @@ a {
 }
 .line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp, 1);
+  /* -webkit-line-clamp: var(--line-clamp, 1); */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -354,4 +354,16 @@ a {
 }
 .popular .courses-item .btn-book:hover {
   background: var(--primary-color);
+}
+/* feedback */
+.feedback {
+  margin-top: 135px; 
+  padding: 96px 0;
+  background-color: rgb(230, 228, 226);
+}.feedback-item{
+  display: flex;
+}
+.feedback-item .avatar{
+  margin-top: 18px;
+ 
 }
